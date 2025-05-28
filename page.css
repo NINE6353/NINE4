@@ -1,0 +1,21 @@
+/* page.css - สำหรับตกแต่งหน้า page */
+.page-content {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.page-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: #222;
+}
+.page-content p {
+  font-size: 1.1rem;
+  color: #444;
+} 

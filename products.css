@@ -1,0 +1,147 @@
+/* products.css */
+.products-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 56px 32px 0 32px;
+  background: #f5f5f5;
+  /* border: 2px solid #b2dfdb; */
+  margin-bottom: 48px;
+}
+.products-content h1 {
+  color: #009688;
+}
+.products-content p {
+  color: #555;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+  justify-items: center;
+}
+
+@media (max-width: 1400px) {
+  .products-content {
+    max-width: 1100px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .products-grid {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .products-content {
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .products-grid {
+    gap: 18px;
+  }
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.18s, box-shadow 0.18s;
+  position: relative;
+  padding-bottom: 12px;
+}
+.product-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background: #f5f5f5;
+}
+.product-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #ff5e8e;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 16px;
+  padding: 4px 16px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(255,94,142,0.12);
+}
+.product-info {
+  padding: 18px 18px 0 18px;
+  text-align: left;
+}
+.product-info h2 {
+  font-size: 1.1rem;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wishlist-btn {
+  background: none;
+  border: none;
+  color: #bbb;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+.wishlist-btn:hover {
+  color: #ff5e8e;
+}
+.product-info .desc {
+  color: #666;
+  font-size: 0.98rem;
+  margin-bottom: 10px;
+}
+.product-price {
+  margin-bottom: 8px;
+}
+.price-new {
+  color: #ff5e8e;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+.price-old {
+  color: #bbb;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+.product-rating {
+  color: #ffb400;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.product-rating .rating-count {
+  color: #888;
+  font-size: 0.95rem;
+}
+.product-card .btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #a259c6 0%, #009688 100%);
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.product-card .btn:hover {
+  background: linear-gradient(90deg, #009688 0%, #a259c6 100%);
+} 
